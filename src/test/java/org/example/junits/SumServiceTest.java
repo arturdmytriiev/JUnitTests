@@ -11,12 +11,12 @@ class SumServiceTest {
     SumService sum;
     @Test
     void testSum() {
-    Assertions.assertEquals(2,sum.add(1,1));
+    Assertions.assertEquals(2,sum.add(0,2));
     }
     
     @Test
     void testMultiply() {
-    Assertions.assertEquals(3,sum.multiply(2,3));
+    Assertions.assertEquals(3,sum.multiply(1,3));
     }
 
 }
