@@ -16,7 +16,7 @@ class SumServiceTest {
     
     @Test
     void testMultiply() {
-    Assertions.assertEquals(3,sum.multiply(2,2));
+    Assertions.assertEquals(3,sum.multiply(2,3));
     }
 
 }

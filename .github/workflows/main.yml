@@ -1,6 +1,9 @@
 name: Run Spring Boot Tests
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
@@ -17,6 +20,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '21'
+          distribution: 'temurin'
 
       - name: Cache Gradle dependencies
         uses: actions/cache@v3
@@ -27,4 +31,4 @@ jobs:
             ${{ runner.os }}-gradle
 
       - name: Run tests
-        run: ./gradlew test
+
