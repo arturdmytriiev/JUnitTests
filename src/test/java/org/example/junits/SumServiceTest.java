@@ -11,7 +11,7 @@ class SumServiceTest {
     SumService sum;
     @Test
     void testSum() {
-    Assertions.assertEquals(2,sum.add(0,2));
+    Assertions.assertEquals(2,sum.add(1,1));
     }
     
     @Test
