@@ -10,6 +10,7 @@ public class SumService {
     }
 
     public int multiply(int a, int b) {
-        return a * b;
+        int resulte = a * b;
+        return resulte;
     }
 }
