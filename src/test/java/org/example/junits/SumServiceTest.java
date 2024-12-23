@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class SumServiceTest {
     @Autowired
     SumService sum;
+
     @Test
     void testSum() {
     Assertions.assertEquals(2,sum.add(1,1));
